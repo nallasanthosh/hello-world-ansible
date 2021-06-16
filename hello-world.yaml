@@ -2,7 +2,7 @@
 - name: Echo
   hosts: 127.0.0.1
   connection: local
-
+  become: true
   tasks:
     - name: Print debug message
       debug:
